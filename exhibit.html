@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lee Jung Seop Gallery</title>
+    <script defer src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="js/common.js"></script>
+    <script defer src="js/exhibit.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/exhibit.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="./index.html"><img src="images/logo_bk.png" alt="logo_image"></a>
+        </h1>
+        <div class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <div class="menu_box">
+        <div class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./information.html" id="information" class="font">Info</a></li>
+                <li><a href="./history.html" id="history" class="font">History</a></li>
+                <li><a href="./exhibit.html" id="exhibit" class="font active">Exhibit</a></li>
+            </ul>
+        </nav>
+        <div class="img_wrap">
+            <div class="img_box information">
+                <img src="images/nav_01.jpg" alt="Info_image">
+            </div>
+            <div class="img_box history">
+                <img src="images/nav_02.jpg" alt="History_image">
+            </div>
+            <div class="img_box exhibit active">
+                <img src="images/nav_03.jpg" alt="Exhibit_image">
+            </div>
+        </div>
+    </div>
+    
+    <div class="cursor">
+            <span></span>
+            <span class="font">view</span>
+        </div>
+    </div>
+
+    <section>
+        <h3 class="font">Exhibit</h3>
+        <div class="inner">
+            <div class="first">
+                <ul>
+                    <li class="exhibit_01">
+                        <figure>                            
+                            <div class="img_box">
+                                <img src="images/exhibit_01.jpg" alt="exhibit_images">
+                            </div>
+                            <figcaption>
+                                <dl>
+                                    <dt>신화에서 <span>1941</span></dt>
+                                    <dd>9cm x 14cm</dd>
+                                </dl>
+                            </figcaption>        
+                        </figure>
+                    </li>
+                    <li class="exhibit_02">
+                        <figure>                            
+                            <div class="img_box">
+                                <img src="images/exhibit_02.jpg" alt="exhibit_images">
+                            </div>
+                            <figcaption>
+                                <dl>
+                                    <dt>물고기와 노는 세 아이 <span>1952-1953</span></dt>
+                                    <dd>25cm x 37cm</dd>
+                                </dl>
+                            </figcaption>        
+                        </figure>
+                    </li>
+                    <li class="exhibit_03">
+                        <figure>                            
+                            <div class="img_box">
+                                <img src="images/exhibit_03.jpg" alt="exhibit_images">
+                            </div>
+                            <figcaption>
+                                <dl>
+                                    <dt>통영앞바다 <span>1950년대</span></dt>
+                                    <dd>8.3cm x 15.4cm</dd>
+                                </dl>
+                            </figcaption>        
+                        </figure>
+                    </li>
+                    <li class="exhibit_04">
+                        <figure>                            
+                            <div class="img_box">
+                                <img src="images/exhibit_04.jpg" alt="exhibit_images">
+                            </div>
+                            <figcaption>
+                                <dl>
+                                    <dt>길 떠나는 가족 <span>1954</span></dt>
+                                    <dd>29.5cm x 64.5cm</dd>
+                                </dl>
+                            </figcaption>        
+                        </figure>
+                    </li>
+                    <li class="exhibit_05">
+                        <figure>                            
+                            <div class="img_box">
+                                <img src="images/exhibit_05.jpg" alt="exhibit_images">
+                            </div>
+                            <figcaption>
+                                <dl>
+                                    <dt>소 <span>1955</span></dt>
+                                    <dd>27.5cm x 41.5cm</dd>
+                                </dl>
+                            </figcaption>        
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+            <div class="middle">
+                <ul>
+                    <li class="exhibit_06">
+                        <figure>                            
+                            <div class="img_box">
+                                <img src="images/exhibit_06.jpg" alt="exhibit_images">
+                            </div>
+                            <figcaption>
+                                <dl>
+                                    <dt>사과 따는 남자 <span>1941</span></dt>
+                                    <dd>13.6cm x 9cm</dd>
+                                </dl>
+                            </figcaption>        
+                        </figure>
+                    </li>
+                    <li class="exhibit_07">
+                        <figure>                            
+                            <div class="img_box">
+                                <img src="images/exhibit_07.jpg" alt="exhibit_images">
+                            </div>
+                            <figcaption>
+                                <dl>
+                                    <dt>낙원의 가족 <span>1950년대</span></dt>
+                                    <dd>8.3cm x 15.4cm</dd>
+                                </dl>
+                            </figcaption>        
+                        </figure>
+                    </li>
+                    <li class="exhibit_08">
+                        <figure>                            
+                            <div class="img_box">
+                                <img src="images/exhibit_08.jpg" alt="exhibit_images">
+                            </div>
+                            <figcaption>
+                                <dl>
+                                    <dt>황소 <span>1953</span></dt>
+                                    <dd>32.3cm x 49.5cm</dd>
+                                </dl>
+                            </figcaption>        
+                        </figure>
+                    </li>
+                    <li class="exhibit_09">
+                        <figure>                            
+                            <div class="img_box">
+                                <img src="images/exhibit_09.jpg" alt="exhibit_images">
+                            </div>
+                            <figcaption>
+                                <dl>
+                                    <dt>투계 <span>1955</span></dt>
+                                    <dd>29cm x 42cm</dd>
+                                </dl>
+                            </figcaption>        
+                        </figure>
+                    </li>
+                    <li class="exhibit_10">
+                        <figure>                            
+                            <div class="img_box">
+                                <img src="images/exhibit_10.jpg" alt="exhibit_images">
+                            </div>
+                            <figcaption>
+                                <dl>
+                                    <dt>나무와 달과 하얀 새 <span>1956</span></dt>
+                                    <dd>14.7cm x 20.4cm</dd>
+                                </dl>
+                            </figcaption>        
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+            <div class="last">
+                <ul>
+                    <li class="exhibit_11">
+                        <figure>                            
+                            <div class="img_box">
+                                <img src="images/exhibit_11.jpg" alt="exhibit_images">
+                            </div>
+                            <figcaption>
+                                <dl>
+                                    <dt>세 사람 <span>1945</span></dt>
+                                    <dd>18.2cm x 28cm</dd>
+                                </dl>
+                            </figcaption>        
+                        </figure>
+                    </li>
+                    <li class="exhibit_12">
+                        <figure>                            
+                            <div class="img_box">
+                                <img src="images/exhibit_12.jpg" alt="exhibit_images">
+                            </div>
+                            <figcaption>
+                                <dl>
+                                    <dt>두 아이 <span>1950년대</span></dt>
+                                    <dd>8.5cm x 15.5cm</dd>
+                                </dl>
+                            </figcaption>        
+                        </figure>
+                    </li>
+                    <li class="exhibit_13">
+                        <figure>                            
+                            <div class="img_box">
+                                <img src="images/exhibit_13.jpg" alt="exhibit_images">
+                            </div>
+                            <figcaption>
+                                <dl>
+                                    <dt>봄의 아동 <span>1952-1953</span></dt>
+                                    <dd>32.6cm x 49.6cm</dd>
+                                </dl>
+                            </figcaption>        
+                        </figure>
+                    </li>
+                    <li class="exhibit_14">
+                        <figure>                            
+                            <div class="img_box">
+                                <img src="images/exhibit_14.jpg" alt="exhibit_images">
+                            </div>
+                            <figcaption>
+                                <dl>
+                                    <dt>흰 소 <span>1953-1954</span></dt>
+                                    <dd>30.7cm x 41.6cm</dd>
+                                </dl>
+                            </figcaption>        
+                        </figure>
+                    </li>
+                    <li class="exhibit_15">
+                        <figure>                            
+                            <div class="img_box">
+                                <img src="images/exhibit_15.jpg" alt="exhibit_images">
+                            </div>
+                            <figcaption>
+                                <dl>
+                                    <dt>시인 구상의 가족 <span>1955</span></dt>
+                                    <dd>32cm x 29.5cm</dd>
+                                </dl>
+                            </figcaption>        
+                        </figure>
+                    </li>
+                    <li class="exhibit_16">
+                        <figure>                            
+                            <div class="img_box">
+                                <img src="images/exhibit_16.jpg" alt="exhibit_images">
+                            </div>
+                            <figcaption>
+                                <dl>
+                                    <dt>돌아오지 않는 강 <span>1956</span></dt>
+                                    <dd>18.8cm x 14.6cm</dd>
+                                </dl>
+                            </figcaption>        
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="view">
+            <ul>
+                <li class="exhibit_01">
+                    <div class="logo">
+                        <img src="images/logo_w.png" alt="logo_image">
+                    </div>
+                    <div class="img_box">
+                        <img src="images/exhibit_02.jpg" alt="exhibit_view_image">
+                    </div>
+                    <div class="text">
+                        <div>
+                            <div class="tit">
+                                <h4>물고기와 노는 세 아이</h4>
+                                <span>1952-1953</span>
+                            </div>
+                            <dl>
+                                <dt>기법</dt>
+                                <dd>종이에 유채, 연필</dd>
+                            </dl>                            
+                            <dl>
+                                <dt>크기</dt>
+                                <dd>25cm x 37cm</dd>
+                            </dl>  
+                            <p>생을 일찍 마감한 첫째 아들에 대한 안타까움,<br>아내와 함께 일본으로 넘어간 두 아들을 그리워하는<br>이중섭의 속마음을 담아냈음을 알 수 있다.</p>                          
+                        </div>
+                        <span class="font">01</span>
+                    </div>
+                </li>
+                <li class="exhibit_02">
+                    <div class="logo">
+                        <img src="images/logo_w.png" alt="logo_image">
+                    </div>
+                    <div class="img_box">
+                        <img src="images/exhibit_02.jpg" alt="exhibit_view_image">
+                    </div>
+                    <div class="text">
+                        <div>
+                            <div class="tit">
+                                <h4>물고기와 노는 세 아이</h4>
+                                <span>1952-1953</span>
+                            </div>
+                            <dl>
+                                <dt>기법</dt>
+                                <dd>종이에 유채, 연필</dd>
+                            </dl>                            
+                            <dl>
+                                <dt>크기</dt>
+                                <dd>25cm x 37cm</dd>
+                            </dl>  
+                            <p>생을 일찍 마감한 첫째 아들에 대한 안타까움,<br>아내와 함께 일본으로 넘어간 두 아들을 그리워하는<br>이중섭의 속마음을 담아냈음을 알 수 있다.</p>                          
+                        </div>
+                        <span class="font">02</span>
+                    </div>
+                </li>
+                <li class="exhibit_03">
+                    <div class="logo">
+                        <img src="images/logo_w.png" alt="logo_image">
+                    </div>
+                    <div class="img_box">
+                        <img src="images/exhibit_02.jpg" alt="exhibit_view_image">
+                    </div>
+                    <div class="text">
+                        <div>
+                            <div class="tit">
+                                <h4>물고기와 노는 세 아이</h4>
+                                <span>1952-1953</span>
+                            </div>
+                            <dl>
+                                <dt>기법</dt>
+                                <dd>종이에 유채, 연필</dd>
+                            </dl>                            
+                            <dl>
+                                <dt>크기</dt>
+                                <dd>25cm x 37cm</dd>
+                            </dl>  
+                            <p>생을 일찍 마감한 첫째 아들에 대한 안타까움,<br>아내와 함께 일본으로 넘어간 두 아들을 그리워하는<br>이중섭의 속마음을 담아냈음을 알 수 있다.</p>                          
+                        </div>
+                        <span class="font">03</span>
+                    </div>
+                </li>
+                <li class="exhibit_04">
+                    <div class="logo">
+                        <img src="images/logo_w.png" alt="logo_image">
+                    </div>
+                    <div class="img_box">
+                        <img src="images/exhibit_02.jpg" alt="exhibit_view_image">
+                    </div>
+                    <div class="text">
+                        <div>
+                            <div class="tit">
+                                <h4>물고기와 노는 세 아이</h4>
+                                <span>1952-1953</span>
+                            </div>
+                            <dl>
+                                <dt>기법</dt>
+                                <dd>종이에 유채, 연필</dd>
+                            </dl>                            
+                            <dl>
+                                <dt>크기</dt>
+                                <dd>25cm x 37cm</dd>
+                            </dl>  
+                            <p>생을 일찍 마감한 첫째 아들에 대한 안타까움,<br>아내와 함께 일본으로 넘어간 두 아들을 그리워하는<br>이중섭의 속마음을 담아냈음을 알 수 있다.</p>                          
+                        </div>
+                        <span class="font">04</span>
+                    </div>
+                </li>
+                <li class="exhibit_05">
+                    <div class="logo">
+                        <img src="images/logo_w.png" alt="logo_image">
+                    </div>
+                    <div class="img_box">
+                        <img src="images/exhibit_02.jpg" alt="exhibit_view_image">
+                    </div>
+                    <div class="text">
+                        <div>
+                            <div class="tit">
+                                <h4>물고기와 노는 세 아이</h4>
+                                <span>1952-1953</span>
+                            </div>
+                            <dl>
+                                <dt>기법</dt>
+                                <dd>종이에 유채, 연필</dd>
+                            </dl>                            
+                            <dl>
+                                <dt>크기</dt>
+                                <dd>25cm x 37cm</dd>
+                            </dl>  
+                            <p>생을 일찍 마감한 첫째 아들에 대한 안타까움,<br>아내와 함께 일본으로 넘어간 두 아들을 그리워하는<br>이중섭의 속마음을 담아냈음을 알 수 있다.</p>                          
+                        </div>
+                        <span class="font">05</span>
+                    </div>
+                </li>
+                <li class="exhibit_06">
+                    <div class="logo">
+                        <img src="images/logo_w.png" alt="logo_image">
+                    </div>
+                    <div class="img_box">
+                        <img src="images/exhibit_02.jpg" alt="exhibit_view_image">
+                    </div>
+                    <div class="text">
+                        <div>
+                            <div class="tit">
+                                <h4>물고기와 노는 세 아이</h4>
+                                <span>1952-1953</span>
+                            </div>
+                            <dl>
+                                <dt>기법</dt>
+                                <dd>종이에 유채, 연필</dd>
+                            </dl>                            
+                            <dl>
+                                <dt>크기</dt>
+                                <dd>25cm x 37cm</dd>
+                            </dl>  
+                            <p>생을 일찍 마감한 첫째 아들에 대한 안타까움,<br>아내와 함께 일본으로 넘어간 두 아들을 그리워하는<br>이중섭의 속마음을 담아냈음을 알 수 있다.</p>                          
+                        </div>
+                        <span class="font">06</span>
+                    </div>
+                </li>
+                <li class="exhibit_07">
+                    <div class="logo">
+                        <img src="images/logo_w.png" alt="logo_image">
+                    </div>
+                    <div class="img_box">
+                        <img src="images/exhibit_02.jpg" alt="exhibit_view_image">
+                    </div>
+                    <div class="text">
+                        <div>
+                            <div class="tit">
+                                <h4>물고기와 노는 세 아이</h4>
+                                <span>1952-1953</span>
+                            </div>
+                            <dl>
+                                <dt>기법</dt>
+                                <dd>종이에 유채, 연필</dd>
+                            </dl>                            
+                            <dl>
+                                <dt>크기</dt>
+                                <dd>25cm x 37cm</dd>
+                            </dl>  
+                            <p>생을 일찍 마감한 첫째 아들에 대한 안타까움,<br>아내와 함께 일본으로 넘어간 두 아들을 그리워하는<br>이중섭의 속마음을 담아냈음을 알 수 있다.</p>                          
+                        </div>
+                        <span class="font">07</span>
+                    </div>
+                </li>
+                <li class="exhibit_08">
+                    <div class="logo">
+                        <img src="images/logo_w.png" alt="logo_image">
+                    </div>
+                    <div class="img_box">
+                        <img src="images/exhibit_02.jpg" alt="exhibit_view_image">
+                    </div>
+                    <div class="text">
+                        <div>
+                            <div class="tit">
+                                <h4>물고기와 노는 세 아이</h4>
+                                <span>1952-1953</span>
+                            </div>
+                            <dl>
+                                <dt>기법</dt>
+                                <dd>종이에 유채, 연필</dd>
+                            </dl>                            
+                            <dl>
+                                <dt>크기</dt>
+                                <dd>25cm x 37cm</dd>
+                            </dl>  
+                            <p>생을 일찍 마감한 첫째 아들에 대한 안타까움,<br>아내와 함께 일본으로 넘어간 두 아들을 그리워하는<br>이중섭의 속마음을 담아냈음을 알 수 있다.</p>                          
+                        </div>
+                        <span class="font">08</span>
+                    </div>
+                </li>
+                <li class="exhibit_09">
+                    <div class="logo">
+                        <img src="images/logo_w.png" alt="logo_image">
+                    </div>
+                    <div class="img_box">
+                        <img src="images/exhibit_02.jpg" alt="exhibit_view_image">
+                    </div>
+                    <div class="text">
+                        <div>
+                            <div class="tit">
+                                <h4>물고기와 노는 세 아이</h4>
+                                <span>1952-1953</span>
+                            </div>
+                            <dl>
+                                <dt>기법</dt>
+                                <dd>종이에 유채, 연필</dd>
+                            </dl>                            
+                            <dl>
+                                <dt>크기</dt>
+                                <dd>25cm x 37cm</dd>
+                            </dl>  
+                            <p>생을 일찍 마감한 첫째 아들에 대한 안타까움,<br>아내와 함께 일본으로 넘어간 두 아들을 그리워하는<br>이중섭의 속마음을 담아냈음을 알 수 있다.</p>                          
+                        </div>
+                        <span class="font">09</span>
+                    </div>
+                </li>
+                <li class="exhibit_10">
+                    <div class="logo">
+                        <img src="images/logo_w.png" alt="logo_image">
+                    </div>
+                    <div class="img_box">
+                        <img src="images/exhibit_02.jpg" alt="exhibit_view_image">
+                    </div>
+                    <div class="text">
+                        <div>
+                            <div class="tit">
+                                <h4>물고기와 노는 세 아이</h4>
+                                <span>1952-1953</span>
+                            </div>
+                            <dl>
+                                <dt>기법</dt>
+                                <dd>종이에 유채, 연필</dd>
+                            </dl>                            
+                            <dl>
+                                <dt>크기</dt>
+                                <dd>25cm x 37cm</dd>
+                            </dl>  
+                            <p>생을 일찍 마감한 첫째 아들에 대한 안타까움,<br>아내와 함께 일본으로 넘어간 두 아들을 그리워하는<br>이중섭의 속마음을 담아냈음을 알 수 있다.</p>                          
+                        </div>
+                        <span class="font">10</span>
+                    </div>
+                </li>
+                <li class="exhibit_11">
+                    <div class="logo">
+                        <img src="images/logo_w.png" alt="logo_image">
+                    </div>
+                    <div class="img_box">
+                        <img src="images/exhibit_02.jpg" alt="exhibit_view_image">
+                    </div>
+                    <div class="text">
+                        <div>
+                            <div class="tit">
+                                <h4>물고기와 노는 세 아이</h4>
+                                <span>1952-1953</span>
+                            </div>
+                            <dl>
+                                <dt>기법</dt>
+                                <dd>종이에 유채, 연필</dd>
+                            </dl>                            
+                            <dl>
+                                <dt>크기</dt>
+                                <dd>25cm x 37cm</dd>
+                            </dl>  
+                            <p>생을 일찍 마감한 첫째 아들에 대한 안타까움,<br>아내와 함께 일본으로 넘어간 두 아들을 그리워하는<br>이중섭의 속마음을 담아냈음을 알 수 있다.</p>                          
+                        </div>
+                        <span class="font">11</span>
+                    </div>
+                </li>
+                <li class="exhibit_12">
+                    <div class="logo">
+                        <img src="images/logo_w.png" alt="logo_image">
+                    </div>
+                    <div class="img_box">
+                        <img src="images/exhibit_02.jpg" alt="exhibit_view_image">
+                    </div>
+                    <div class="text">
+                        <div>
+                            <div class="tit">
+                                <h4>물고기와 노는 세 아이</h4>
+                                <span>1952-1953</span>
+                            </div>
+                            <dl>
+                                <dt>기법</dt>
+                                <dd>종이에 유채, 연필</dd>
+                            </dl>                            
+                            <dl>
+                                <dt>크기</dt>
+                                <dd>25cm x 37cm</dd>
+                            </dl>  
+                            <p>생을 일찍 마감한 첫째 아들에 대한 안타까움,<br>아내와 함께 일본으로 넘어간 두 아들을 그리워하는<br>이중섭의 속마음을 담아냈음을 알 수 있다.</p>                          
+                        </div>
+                        <span class="font">12</span>
+                    </div>
+                </li>
+                <li class="exhibit_13">
+                    <div class="logo">
+                        <img src="images/logo_w.png" alt="logo_image">
+                    </div>
+                    <div class="img_box">
+                        <img src="images/exhibit_02.jpg" alt="exhibit_view_image">
+                    </div>
+                    <div class="text">
+                        <div>
+                            <div class="tit">
+                                <h4>물고기와 노는 세 아이</h4>
+                                <span>1952-1953</span>
+                            </div>
+                            <dl>
+                                <dt>기법</dt>
+                                <dd>종이에 유채, 연필</dd>
+                            </dl>                            
+                            <dl>
+                                <dt>크기</dt>
+                                <dd>25cm x 37cm</dd>
+                            </dl>  
+                            <p>생을 일찍 마감한 첫째 아들에 대한 안타까움,<br>아내와 함께 일본으로 넘어간 두 아들을 그리워하는<br>이중섭의 속마음을 담아냈음을 알 수 있다.</p>                          
+                        </div>
+                        <span class="font">13</span>
+                    </div>
+                </li>
+                <li class="exhibit_14">
+                    <div class="logo">
+                        <img src="images/logo_w.png" alt="logo_image">
+                    </div>
+                    <div class="img_box">
+                        <img src="images/exhibit_02.jpg" alt="exhibit_view_image">
+                    </div>
+                    <div class="text">
+                        <div>
+                            <div class="tit">
+                                <h4>물고기와 노는 세 아이</h4>
+                                <span>1952-1953</span>
+                            </div>
+                            <dl>
+                                <dt>기법</dt>
+                                <dd>종이에 유채, 연필</dd>
+                            </dl>                            
+                            <dl>
+                                <dt>크기</dt>
+                                <dd>25cm x 37cm</dd>
+                            </dl>  
+                            <p>생을 일찍 마감한 첫째 아들에 대한 안타까움,<br>아내와 함께 일본으로 넘어간 두 아들을 그리워하는<br>이중섭의 속마음을 담아냈음을 알 수 있다.</p>                          
+                        </div>
+                        <span class="font">14</span>
+                    </div>
+                </li>
+                <li class="exhibit_15">
+                    <div class="logo">
+                        <img src="images/logo_w.png" alt="logo_image">
+                    </div>
+                    <div class="img_box">
+                        <img src="images/exhibit_02.jpg" alt="exhibit_view_image">
+                    </div>
+                    <div class="text">
+                        <div>
+                            <div class="tit">
+                                <h4>물고기와 노는 세 아이</h4>
+                                <span>1952-1953</span>
+                            </div>
+                            <dl>
+                                <dt>기법</dt>
+                                <dd>종이에 유채, 연필</dd>
+                            </dl>                            
+                            <dl>
+                                <dt>크기</dt>
+                                <dd>25cm x 37cm</dd>
+                            </dl>  
+                            <p>생을 일찍 마감한 첫째 아들에 대한 안타까움,<br>아내와 함께 일본으로 넘어간 두 아들을 그리워하는<br>이중섭의 속마음을 담아냈음을 알 수 있다.</p>                          
+                        </div>
+                        <span class="font">15</span>
+                    </div>
+                </li>
+                <li class="exhibit_16">
+                    <div class="logo">
+                        <img src="images/logo_w.png" alt="logo_image">
+                    </div>
+                    <div class="img_box">
+                        <img src="images/exhibit_02.jpg" alt="exhibit_view_image">
+                    </div>
+                    <div class="text">
+                        <div>
+                            <div class="tit">
+                                <h4>물고기와 노는 세 아이</h4>
+                                <span>1952-1953</span>
+                            </div>
+                            <dl>
+                                <dt>기법</dt>
+                                <dd>종이에 유채, 연필</dd>
+                            </dl>                            
+                            <dl>
+                                <dt>크기</dt>
+                                <dd>25cm x 37cm</dd>
+                            </dl>  
+                            <p>생을 일찍 마감한 첫째 아들에 대한 안타까움,<br>아내와 함께 일본으로 넘어간 두 아들을 그리워하는<br>이중섭의 속마음을 담아냈음을 알 수 있다.</p>                          
+                        </div>
+                        <span class="font">16</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright © LeeJungSeopGallery All rights reserved.</p>
+        <h2>
+            <a href="./index.html"><img src="images/logo_w.png" alt="logo_image"></a>
+        </h2>
+        <nav>
+            <ul>
+                <li><a href="###" class="font">Facebook</a></li>
+                <li><a href="###" class="font">Instagram</a></li>
+                <li><a href="###" class="font">Youtube</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
