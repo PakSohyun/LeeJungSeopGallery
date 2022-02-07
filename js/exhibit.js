@@ -12,7 +12,7 @@ function cursor(){
         setTimeout(function(){
             $(".cursor").css({left:($posX+2) + "px" , top:($posY+20) + "px"});
             $(".cursor").css("opacity","1");
-        },50)
+        },100)
         
         cursorView("section .inner > div ul li figure .img_box img");        
         cursorView("section .inner > div ul li figure figcaption dl");        
@@ -106,13 +106,14 @@ function click_init(){
 
 function mouseClick($target){
     $($target).click(function(){
-        var $list = $(this).closest("li").attr("class");
+        var $list = $(this).closest("li").attr("id");
         $("section .view").fadeIn();
         $("." + $list).addClass("active");
         $("body").css("overflow-y", "hidden");
     });    
     $("section .view img").click(function(){
         $("section .view").fadeOut();
+        $("section .view li").removeClass("active");
         $("section .view li").removeClass("active");
         $("body").css("overflow-y", "scroll");
     });  

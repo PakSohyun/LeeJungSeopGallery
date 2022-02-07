@@ -22,7 +22,7 @@ section .view ul li{display: none; width: 100%; height: 100%;}
 section .view ul li .logo{display: flex; align-items: center; justify-content: center; width: 9.6rem; height: 100%;}
 section .view ul li .logo img{width: auto; transform: rotate(-90deg);}
 section .view ul li .img_box{overflow: hidden; display: flex; align-items: center; justify-content: center; width: 59.17%;}
-section .view ul li .img_box img{transform: scale(2.5); object-fit: cover;}
+section .view ul li .img_box img{min-height: 100%; object-fit: cover;}
 section .view ul li .text{position: relative; width: 35.83%; margin-top: 16.0rem; border: 1px solid #969696; border-width: 1px 0 0;}
 section .view ul li .text > div{padding: 12.0rem 0 16.0rem 12.0rem; border: 1px solid #969696; border-width: 0 0 1px;} 
 section .view ul li .text > div .tit{margin-bottom: 6.4rem;}
@@ -43,9 +43,8 @@ section .view ul li.active{display: flex;}
 
 
 /* 
-슬라이드 애니메이션 속도 불규칙(js 로딩 문제)
 스크롤 시 마우스 이미지 끊김
 더보기 부모 라인 덮을 수 있는지
 view 이미지 오브젝트핏 안됨 / 마우스 이동 시 이미지 따라가기
-mouseClick li 클릭 시 class명 attr, 한번 클릭 시 정상, 두번클릭 시 active 붙음
+https://paksohyun.github.io/LeeJungSeopGallery/index.html
 */

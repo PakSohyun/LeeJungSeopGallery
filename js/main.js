@@ -18,7 +18,7 @@ function cursor(){
         setTimeout(function(){
             $(".cursor").css({left:($posX+2) + "px" , top:($posY+20) + "px"});
             $(".cursor").css("opacity","1");
-        },50)
+        },100)
         
         cursorView("main .slide .hover");        
         function cursorView($target){
