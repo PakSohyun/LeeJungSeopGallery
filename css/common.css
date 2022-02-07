@@ -1,6 +1,6 @@
 *{box-sizing: border-box;}
 html{font-size: 62.5%;}
-body{overflow-x: hidden;}
+body{overflow-x: hidden; background-color: #fff;}
 body::-webkit-scrollbar{width: 8px;}
 body::-webkit-scrollbar-track{background-color: transparent;}
 body::-webkit-scrollbar-thumb{border-radius: 8px; background-color: #969696;}
@@ -41,7 +41,7 @@ header .menu span:not(:last-child){margin-bottom: 4px;}
 .cursor.active span:nth-child(2){transform: translateY(0px); transition-duration: 0.6s; transition-delay: 0.3s; opacity: 1;}
 
 section{padding: 32.0rem 0 24.0rem;}
-section h3{padding: 0 0 12.0rem 24.4rem; font-size: 20.0rem; transform: translateY(80px); transition-duration: 0.6s; opacity: 0;}
+section h3{padding: 0 0 12.0rem 24.4rem; font-size: 20.0rem; transform: translateY(80px); transition: opacity 0.6s, transform 0.6s; opacity: 0;}
 section h3.active{transform: translateY(0px); opacity: 1;}
 
 footer{display: flex; align-items: center; justify-content: space-between; padding: 3.0rem 5.0rem; background-color: #141414;}
