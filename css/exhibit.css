@@ -2,14 +2,14 @@ html, body{height: 100%;}
 section .inner{display: flex; justify-content: space-between; padding: 0 9.6rem;}
 section .inner > div:not(:last-child){margin-right: 4.0rem;}
 section .inner > div ul li:not(:last-child){margin-bottom: 6.4rem;}
-section .inner > div ul li figure .img_box{margin-bottom: 1.6rem; display: inline-block; overflow: hidden; transform: translateY(80px); transition-duration: 0.6s; opacity: 0;}
-section .inner > div ul li figure .img_box img{width: 100%; transform: scale(1.15); transition-duration: 0.6s; transition-delay: 0.6s; cursor: pointer;}
-section .inner > div ul li figure .img_box img:hover{transform: scale(1.1); transition-duration: 0.6s;}
-section .inner > div.first ul li:first-child figure .img_box img{transition-delay: 0.9s;}
-section .inner > div.middle ul li:first-child figure .img_box{transition-delay: 0.3s;}
-section .inner > div.middle ul li:first-child figure .img_box img{transition-delay: 0.9s;}
-section .inner > div.last ul li:first-child figure .img_box{transition-delay: 0.6s;}
-section .inner > div.last ul li:first-child figure .img_box img{transition-delay: 0.9s;}
+section .inner > div ul li figure .img_box{margin-bottom: 1.6rem; display: inline-block; overflow: hidden; transform: translateY(80px); transition: all 0.6s; opacity: 0;}
+section .inner > div ul li figure .img_box img{width: 100%; transform: scale(1.15); transition: all 0.6s 0.6s; cursor: pointer;}
+section .inner > div ul li figure .img_box img:hover{transform: scale(1.1); transition: all 0.6s;}
+section .inner > div.first ul li:first-child figure .img_box img{transition: all 0.6s 0.9s;;}
+section .inner > div.middle ul li:first-child figure .img_box{transition: all 0.6s 0.3s;}
+section .inner > div.middle ul li:first-child figure .img_box img{transition: all 0.6s 0.9s;;}
+section .inner > div.last ul li:first-child figure .img_box{transition: all 0.6s 0.6s;}
+section .inner > div.last ul li:first-child figure .img_box img{transition: all 0.6s 0.9s;;}
 section .inner > div ul li figure figcaption{cursor: pointer;}
 section .inner > div ul li figure figcaption dl dt{margin-bottom: 0.8rem; font-size: 2.4rem; font-weight: 500;}
 section .inner > div ul li figure figcaption dl dt span{font-size: 1.6rem;}
@@ -46,5 +46,5 @@ section .view ul li.active{display: flex;}
 스크롤 시 마우스 이미지 끊김
 더보기 부모 라인 덮을 수 있는지
 view 이미지 오브젝트핏 안됨 / 마우스 이동 시 이미지 따라가기
-https://paksohyun.github.io/LeeJungSeopGallery/index.html
+https://paksohyun.github.io/LeeJungSeopGallery/exhibit.html
 */
