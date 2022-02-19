@@ -7,7 +7,7 @@ $(document).ready(function(){
 function cursor(){
     $(window).mousemove(function(e){
         var $posX = e.pageX;
-        var $posY = e.pageY;
+        var $posY = e.pageY - scrollY;
         setTimeout(function(){
             $(".cursor").css({left:($posX+2) + "px" , top:($posY+20) + "px"});
             $(".cursor").css("opacity","1");
