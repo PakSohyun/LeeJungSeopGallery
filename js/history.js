@@ -15,11 +15,20 @@ function cursor(){
         },100)
         
         cursorView(".artist_history .more p");        
-        cursorView(".slide_wrap .swiper-slide");        
         function cursorView($target){
             $($target).mouseover(function(){
                 $(".cursor").addClass("active");
                 $(".cursor span:nth-child(2)").text("view");
+            })
+            $($target).mouseleave(function(){
+                $(".cursor").removeClass("active");
+            })
+        }
+        cursorMore(".slide_wrap .swiper-slide");        
+        function cursorMore($target){
+            $($target).mouseover(function(){
+                $(".cursor").addClass("active");
+                $(".cursor span:nth-child(2)").text("more");
             })
             $($target).mouseleave(function(){
                 $(".cursor").removeClass("active");
