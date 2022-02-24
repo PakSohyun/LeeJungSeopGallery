@@ -10,10 +10,12 @@ function control_mouse(){
 
 function menu(){
     $("header .menu").click(function(){
+        $("header .menu").addClass("active");
         $(".menu_box").addClass("active");
         $("body").css("overflow-y", "hidden");
     });
     $(".menu_box .menu").click(function(){
+        $("header .menu").removeClass("active");
         $(".menu_box").removeClass("active");
         $("body").css("overflow-y", "scroll");
     });
