@@ -1,4 +1,4 @@
-section div .text{transform: translateY(80px); transition: all 0.6s; opacity: 0;}
+section div .text{transform: translateY(80px); transition: transform 0.6s, opacity 0.6s; opacity: 0;}
 section div .text h4{display: block; margin-bottom: 4.8rem; font-size: 3.2rem; font-weight: 500;}
 section div .text div{display: inline-block;}
 section div .text p{font-size: 1.6rem; line-height: 2.8rem;}
@@ -7,8 +7,8 @@ section div .text dl{display: inline-block; margin-right: 9.6rem;}
 section div .text dl dt{margin-bottom: 2.4rem; font-size: 1.6rem; font-weight: 500;}
 section div .text dl dd{font-size: 1.6rem; line-height: 2.8rem;}
 section div .text span{font-size: 1.2rem; line-height: 2.1rem;}
-section div .img_box{overflow: hidden; transform: translateY(80px); transition: all 0.6s; opacity: 0;}
-section div .img_box img{transform: scale(1.15); transition: all 0.6s 0.6s;}
+section div .img_box{overflow: hidden; transform: translateY(80px); transition: transform 0.6s, opacity 0.6s; opacity: 0;}
+section div .img_box img{transform: scale(1.15); transition: transform 0.6s 0.6s;}
 section .info{margin-bottom: 24.0rem;}
 section .info .img_box{margin: 0 24.4rem 12.0rem 0;}
 section .info .text{display: flex; justify-content: space-between; padding-left: 39.2rem;}
@@ -18,11 +18,11 @@ section .time{margin-bottom: 24.0rem;}
 section .time .img_wrap{display: flex; justify-content: space-between; align-items: flex-end; padding-left: 24.4rem; margin-bottom: 12.0rem; font-size: 0;}
 section .time .img_wrap .img_box{display: inline-block;}
 section .time .img_wrap div:nth-child(1) .img_box:nth-child(1){margin-right: 4.8rem;}
-section .time .img_wrap div:nth-child(1) .img_box:nth-child(1) img{transition: all 0.6s 1.2s;}
-section .time .img_wrap div:nth-child(1) .img_box:nth-child(2){margin-bottom: -12.1rem; transition: all 0.6s 0.3s;}
-section .time .img_wrap div:nth-child(1) .img_box:nth-child(2) img{transition: all 0.6s 1.2s;}
-section .time .img_wrap div:nth-child(2) .img_box{transition: all 0.6s 0.6s;}
-section .time .img_wrap div:nth-child(2) .img_box img{transition: all 0.6s 1.2s;}
+section .time .img_wrap div:nth-child(1) .img_box:nth-child(1) img{transition: transform 0.6s 1.2s;}
+section .time .img_wrap div:nth-child(1) .img_box:nth-child(2){margin-bottom: -12.1rem; transition: transform 0.6s 0.3s, opacity 0.6s 0.3s;}
+section .time .img_wrap div:nth-child(1) .img_box:nth-child(2) img{transition: transform 0.6s 1.2s;}
+section .time .img_wrap div:nth-child(2) .img_box{transition: transform 0.6s 0.6s, opacity 0.6s 0.6s;}
+section .time .img_wrap div:nth-child(2) .img_box img{transition: transform 0.6s 1.2s;}
 section .time .img_box img{display: block;}
 section .time .text{padding-left: 24.4rem;}
 section .price{display: flex; justify-content: space-between; align-items: center; margin-bottom: 24.0rem;}
