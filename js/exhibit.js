@@ -115,6 +115,18 @@ function mouseScroll($target){
             }        
         });    
     }
+    if($(window).outerWidth() < 768){
+        $(window).scroll(function(){
+            var $top = $(window).scrollTop();
+            var $offsetTop = ($($target).offset().top)-500;
+            if($offsetTop < $top){
+                $($target).addClass("active");
+                setTimeout(function(){
+                    $($target).children().css("transition-delay","0s");
+                },700);
+            }        
+        });    
+    }
 }
 
 function click_init(){
@@ -129,9 +141,8 @@ function mouseClick($target){
         $("." + $list).addClass("active");
         $("body").css("overflow-y", "hidden");
     });    
-    $("section .view img").click(function(){
+    $("section .view").click(function(){
         $("section .view").fadeOut();
-        $("section .view li").removeClass("active");
         $("section .view li").removeClass("active");
         $("body").css("overflow-y", "scroll");
     });  
