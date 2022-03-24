@@ -1,0 +1,130 @@
+ /* section margin bottom : 24.0rem   img,text margin bottom : 12.0rem */
+section div .text{transform: translateY(80px); transition: transform 0.6s, opacity 0.6s; opacity: 0;}
+section div .text h4{display: block; margin-bottom: 4.8rem; font-size: 3.2rem; font-weight: 500;}
+section div .text div{display: inline-block;}
+section div .text p{font-size: 1.6rem; line-height: 2.8rem;}
+section div .text p:first-child{margin-bottom: 3.2rem;}
+section div .text dl{display: inline-block;}
+section div .text dl:not(:last-of-type){ margin-right: 9.6rem;}
+section div .text dl dt{margin-bottom: 2.4rem; font-size: 1.6rem; font-weight: 500;}
+section div .text dl dd{font-size: 1.6rem; line-height: 2.8rem;}
+section div .text span{font-size: 1.2rem; line-height: 2.1rem;}
+section div .img_box{overflow: hidden; transform: translateY(80px); transition: transform 0.6s, opacity 0.6s; opacity: 0;}
+section div .img_box img{width: 100%; transform: scale(1.15); transition: transform 0.6s 0.6s;}
+section .info{margin-bottom: 24.0rem;}
+section .info .img_box{margin: 0 24.4rem 12.0rem 0;}
+section .info .text{display: flex; justify-content: space-between; padding-left: 39.2rem;}
+section .info .text h4{display: inline-block;}
+section .info .text div{width: 70.95%;}
+section .time{margin-bottom: 24.0rem;}
+section .time .img_wrap{display: flex; justify-content: space-between; align-items: flex-end; padding-left: 24.4rem; margin-bottom: 12.0rem; font-size: 0;}
+section .time .img_wrap .img_box{display: inline-block;}
+section .time .img_wrap > div:nth-child(1){display: flex; flex-direction: row; align-items: flex-end; width: 41.547%;}
+section .time .img_wrap > div:nth-child(1) .img_box:nth-child(1){margin-right: 4.8rem;}
+section .time .img_wrap > div:nth-child(1) .img_box:nth-child(1) img{transition: transform 0.6s 1.2s;}
+section .time .img_wrap > div:nth-child(1) .img_box:nth-child(2){margin-bottom: -12.1rem; transition: transform 0.6s 0.3s, opacity 0.6s 0.3s;}
+section .time .img_wrap > div:nth-child(1) .img_box:nth-child(2) img{transition: transform 0.6s 1.2s;}
+section .time .img_wrap > div:nth-child(2){width: 38.37%;}
+section .time .img_wrap > div:nth-child(2) .img_box{transition: transform 0.6s 0.6s, opacity 0.6s 0.6s;}
+section .time .img_wrap > div:nth-child(2) .img_box img{transition: transform 0.6s 1.2s;}
+section .time .img_box img{display: block;}
+section .time .text{padding-left: 24.4rem;}
+section .price{display: flex; justify-content: space-between; align-items: center; margin-bottom: 24.0rem;}
+section .price .img_box{width: 48.75%;}
+section .price .text{width: 41.04%;}
+section .price .text dl{margin-bottom: 3.2rem;}
+section .price .text dl strong{font-weight: 500;}
+section .price .text dl dd{line-height: 4.0rem;}
+section .price .text span{display: block;}
+section .rolling{overflow: hidden; margin-bottom: 24.0rem;}
+section .rolling .roll{display: flex; justify-content: center;}
+section .rolling .roll:first-child{margin-bottom: 8.0rem;}
+section .rolling .roll ul{display: flex; transition: all 0.3s;}
+section .rolling .roll ul li{display: inline-block; margin-right: 16.0rem;}
+section .rolling .roll ul li a{display: inline-block;}
+section .enquiry{display: flex; justify-content: space-between; align-items: center; padding-left: 24.4rem;}
+section .enquiry .img_box{width: 41.29%;}
+section .enquiry .text{width: 47.02%;}
+section .enquiry .text > p{margin-bottom: 2.4rem;}
+section .enquiry .text dl{display: block;}
+section .enquiry .text dl:last-of-type{margin: 2.4rem 0 24.0rem;}
+section .enquiry .text dl dt{display: inline-block; margin-right: 1.6rem; margin-bottom: 0;}
+section .enquiry .text dl dd{display: inline-block;}
+section .enquiry .text .contact{display: block;}
+section .enquiry .text .contact p{margin-bottom: 1.2rem; color: #969696;}
+section .enquiry .text .contact h5 a{font-size: 4.8rem;}
+section .enquiry .text .contact h5 a img{margin-left: 1.6rem;}
+
+/* active */
+section div .text.active{transform: translateY(0px); opacity: 1;}
+section div .img_box.active{transform: translateY(0px); opacity: 1;}
+section div .img_box.active img{transform: scale(1.0);}
+
+@media screen and (min-width: 1280px) and (max-width: 1440px){
+    section .rolling .roll:nth-child(1) ul li a img{width: 56.0rem;}
+    section .rolling .roll:nth-child(2) ul li a img{width: 50.0rem;}
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px){    
+    section .info .text{padding-left: 24.0rem;}
+    section .time .img_wrap,section .time .text,section .enquiry{padding-left: 16.0rem;}
+    section .rolling .roll ul li{margin-right: 14.4rem;}
+    section .rolling .roll:nth-child(1) ul li a img{width: 40.0rem;}
+    section .rolling .roll:nth-child(2) ul li a img{width: 38.0rem;}
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){   
+     /* section margin bottom : 19.2rem   img,text margin bottom : 12.0rem */
+    section .info{margin-bottom: 19.2rem;}
+    section .info .text{padding: 0 5.6rem 0 16.0rem; justify-content: flex-start;}
+    section .info .text > div{width: 55%; word-break: keep-all;}
+    section .info .text > div br{display: none;}
+    section .info .text h4{margin-right: 8.0rem;}
+    section .info .img_box{margin: 0 9.6rem 12.0rem 0;}
+    section .time{margin-bottom: 19.2rem;}
+    section .time .img_wrap,section .time .text,section .enquiry{padding-left: 12.0rem;}
+    section .time .img_wrap > div:nth-child(1){width: 46%;}
+    section .time .img_wrap > div:nth-child(1) .img_box:nth-child(1){margin-right: 3.2rem;}
+    section .time .img_wrap > div:nth-child(2){width: 43%;}
+    section .price{margin-bottom: 19.2rem;}
+    section .price .text dl:not(:last-of-type){margin-right: 4.0rem;}
+    section .price .text{padding-right: 5.6rem;}
+    section .price .text span{width: 75%; word-break: keep-all;}
+    section .rolling{margin-bottom: 19.2rem;}
+    section .rolling .roll:first-child{margin-bottom: 5.6rem;}
+    section .rolling .roll ul li{margin-right: 8.0rem;}
+    section .rolling .roll:nth-child(1) ul li a img{width: 24.0rem;}
+    section .rolling .roll:nth-child(2) ul li a img{width: 22.0rem;}
+    section .rolling .roll:nth-child(2) ul li:first-child{margin-left: 8rem;}
+    section .enquiry .text{padding-right: 5.6rem; word-break: keep-all;}
+    section .enquiry .text dl:last-of-type{margin: 2.4rem 0 9.6rem;}
+}
+@media screen and (max-width: 767px){    
+     /* section margin bottom : 16.0rem   img,text margin bottom : 8.0rem */
+    section div .text dl:not(:last-of-type){margin-right: 5.6rem;}
+    section div .text span{display: block;}
+    section .info,section .time,section .price{margin-bottom: 16.0rem;}
+    section .price,section .enquiry{display: flex; flex-direction: column;}    
+    section .time .text,section .price .text,section .enquiry .text{width: auto; padding: 0 2.4rem;}
+    section .info .text{padding: 0 2.4rem; flex-direction: column; justify-content: flex-start;}
+    section .info .text h4{margin-right: 2.4rem;}
+    section .info .text > div{width: auto; word-break: keep-all;}
+    section .info .text > div br{display: none;}
+    section .info .img_box{margin: 0 2.4rem 8.0rem 0;}
+    section .info .img_box img{width: 150%;}
+    section .time .text dl:not(:first-of-type){width: 35%; word-break: keep-all; vertical-align: top;}
+    section .time .img_wrap{padding-left: 2.4rem; margin-bottom: 8.0rem; align-items: flex-start;}
+    section .time .img_wrap > div:nth-child(1){width: 30%;}
+    section .time .img_wrap > div:nth-child(1) .img_box:nth-child(1){display: none;}
+    section .time .img_wrap > div:nth-child(1) .img_box:nth-child(2){margin-top: -4.0rem; margin-bottom: 0rem;}
+    section .time .img_wrap > div:nth-child(2){width: 65%;}
+    section .price .text span{word-break: keep-all;}
+    section .price .img_box,section .enquiry .img_box{width: 100%; margin-bottom: 8.0rem;}
+    section .rolling{margin-bottom: 16.0rem;}
+    section .rolling .roll:first-child{margin-bottom: 4.0rem;}
+    section .rolling .roll ul li{margin-right: 4.0rem;}
+    section .rolling .roll:nth-child(1) ul li a img{width: 16.0rem;}
+    section .rolling .roll:nth-child(2) ul li a img{width: 14.5rem;}
+    section .rolling .roll:nth-child(2) ul li:first-child{margin-left: 8rem;}
+    section .enquiry{padding-left: 0;}
+    section .enquiry .text > p{width: 90%; word-break: keep-all;}
+    section .enquiry .text dl:last-of-type{margin: 2.4rem 0 9.6rem;}
+}

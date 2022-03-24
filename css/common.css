@@ -1,0 +1,93 @@
+*{box-sizing: border-box;}
+html{font-size: 62.5%;}
+body{overflow-x: hidden; background-color: #fff;}
+body::-webkit-scrollbar{width: 8px;}
+body::-webkit-scrollbar-track{background-color: transparent;}
+body::-webkit-scrollbar-thumb{border-radius: 8px; background-color: #969696;}
+    
+.font{font-family: 'Argue DEMO'; letter-spacing: -2px;}
+
+header{position: fixed; z-index: 999; width: 100%; padding: 5.0rem 5.0rem 0; display: flex; align-items: center; justify-content: space-between;}
+header h1{display: inline-block;}
+header h1 a{display: inline-block;}
+header h1 a img{width: 100%;}
+header .menu{display: flex; flex-direction: column; justify-content: center; align-items: center; width: 40px; height: 40px; border-radius: 40px; background-color: #141414; cursor: pointer;}
+header .menu span{display: block; width: 20px; height: 2px; background-color: #fff; transition: all 0.6s;}
+header .menu span:not(:last-child){margin-bottom: 4px;}
+header .menu.active span:nth-child(1){transform: rotate(45deg) translate3d(4px,3px,0);}
+header .menu.active span:nth-child(2){opacity: 0;}
+header .menu.active span:nth-child(3){transform: rotate(-45deg) translate3d(5px,-5px,0);}
+
+.menu_box{position: fixed; z-index: -999; width: 100%; height: 100%; background-color: #141414; transition: opacity 0.6s, z-index 0.6s; opacity: 0;}
+.menu_box .menu{position: absolute; z-index: 9999; top: 5.0rem; right: 5.0rem; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 40px; height: 40px; border-radius: 40px; background-color: #141414; cursor: pointer; transition: all 0.6s;}
+.menu_box .menu span{display: block; width: 20px; height: 2px; background-color: #fff; transition: all 0.6s;}
+.menu_box .menu span:not(:last-child){margin-bottom: 4px;}
+.menu_box nav{position: relative; width: 100%; height: 100%;}
+.menu_box nav ul{position: absolute; top: 50%; transform: translateY(-50%); width: 100%; padding: 0 5%;}
+.menu_box nav ul li{display: block; padding: 3.704% 0 1.158%;}
+.menu_box nav ul li:not(:last-child){border-bottom: 1px solid #969696;}
+.menu_box nav ul li a{display: inline-block; padding-left: 5.556%; font-size: 20.0rem; color: #fff; transition: all 0.4s;}
+.menu_box nav ul li a:hover,.menu_box nav ul li a.active{color: #141414; text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; }
+.menu_box .img_wrap .img_box{position: absolute; top: 50%; right: 12.709%; width: 28.334%; transform: translateY(-50%); transition: opacity 0.4s; opacity: 0;}
+.menu_box .img_wrap .img_box.active{opacity: 1;}
+.menu_box .img_wrap .img_box img{width: 100%;}
+.menu_box.active{z-index: 9999; opacity: 1;}
+.menu_box.active .menu{border: 1px solid #fff;}
+.menu_box.active .menu span:nth-child(1){transform: rotate(45deg) translate3d(4px,3px,0);}
+.menu_box.active .menu span:nth-child(2){opacity: 0;}
+.menu_box.active .menu span:nth-child(3){transform: rotate(-45deg) translate3d(5px,-5px,0);}
+
+.cursor{position: fixed; z-index: 9999; display: flex; align-items: center; justify-content: center; opacity: 0;}
+.cursor span:nth-child(1){width: 32px; height: 32px; border-radius: 200px; background-color: #141414; transition: width 0.6s, height 0.6s;}
+.cursor span:nth-child(2){position: absolute; color: #fff; font-size: 2.4rem; text-align: center; transform: translateY(20px); opacity: 0;}
+.cursor.active span:nth-child(1){width: 120px; height: 120px;}
+.cursor.active span:nth-child(2){transform: translateY(0px); transition: transform 0.6s 0.3s, opacity 0.6s 0.3s; opacity: 1;}
+
+section{padding: 32.0rem 0 24.0rem;}
+section h3{padding: 0 0 12.0rem 24.4rem; font-size: 20.0rem; transform: translateY(80px); transition: transform 0.6s, opacity 0.6s; opacity: 0;}
+section h3.active{transform: translateY(0px); opacity: 1;}
+
+footer{display: flex; align-items: center; justify-content: space-between; padding: 3.0rem 5.0rem; background-color: #141414;}
+footer p{color: #fff; font-size: 1.2rem; font-weight: 100; letter-spacing: 0;}
+footer h2 a{display: inline-block;}
+footer h2 a img{width: 100%;}
+footer nav ul li{display: inline-block;}
+footer nav ul li:nth-child(1) a{padding: 0 2.4rem 0 0; border-right: 1px solid #fff;}
+footer nav ul li:nth-child(2) a{padding: 0 2.4rem 0 2.4rem; border-right: 1px solid #fff;}
+footer nav ul li:nth-child(3) a{padding: 0 0 0 2.4rem;}
+footer nav ul li a.font{color: #fff; font-size: 1.6rem; letter-spacing: 0px;}
+
+@media screen and (min-width: 1280px) and (max-width: 1440px){
+    html{font-size: 50%;}
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+    html{font-size: 50%;}
+    section h3{padding: 0 0 12.0rem 16.0rem; font-size: 18.0rem;}
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    html{font-size: 50%;}
+    .menu_box nav ul{top: 5%; left: 50%; transform: translateY(0) translateX(-50%); padding: 0 7%;}
+    .menu_box nav ul li{padding: 5% 0 3%;}
+    .menu_box nav ul li a{padding: 0 16px; font-size: 16rem;}
+    .menu_box .img_wrap .img_box{overflow: hidden; right: 0; left: 50%; top: auto; bottom: 5%; transform: translateX(-50%); z-index: -1; width: 100%; height: 35%; padding: 0 7%;}
+    .menu_box .img_wrap .img_box img{transform: translateY(-35%);}
+    section{padding: 28.0rem 0 19.2rem;}
+    section h3{padding: 0 0 9.6rem 12.0rem; font-size: 12.0rem;}
+    footer h2{display: none;}
+}
+@media screen and (max-width: 767px){
+    html{font-size: 50%;}
+    header{padding: 24px 24px;}
+    header h1{width: 45%;}
+    .menu_box .menu{top: 24px; right: 24px;}
+    .menu_box nav ul{top: 5%; left: 50%; transform: translateY(0) translateX(-50%); padding: 0 7%;}
+    .menu_box nav ul li{padding: 10% 0 5%;}
+    .menu_box nav ul li a{padding: 0 16px; font-size: 10rem;}
+    .menu_box .img_wrap .img_box{overflow: hidden; right: 0; left: 50%; top: auto; bottom: 5%; transform: translateX(-50%); z-index: -1; width: 100%; height: 30%; padding: 0 7%;}
+    .menu_box .img_wrap .img_box img{transform: translateY(-25%);}
+    section{padding: 22.4rem 0 16.0rem;}
+    section h3{padding: 0 0 8.0rem 2.4rem; font-size: 7.2rem;}
+    footer{flex-direction: column-reverse}
+    footer h2{display: none;}
+    footer nav{margin-bottom: 1.6rem;}
+}
